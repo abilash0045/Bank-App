@@ -9,10 +9,10 @@ public class Main {
         String name = sc.next();
         String password = sc.next();
         double balance = sc.nextDouble();
-        SBI_User user = new SBI_User(name,balance,password);
+        HDFC_User user = new HDFC_User(name,password,balance);
 
         // add money
-        String message = user.addMoney(10000);
+        String message = user.addMoney((int)balance);
         System.out.println(message);
 
         //withdraw
