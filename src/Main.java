@@ -10,6 +10,7 @@ public class Main {
         String password = sc.next();
         double balance = sc.nextDouble();
         HDFC_User user = new HDFC_User(name,password,balance);
+        System.out.println("Account created Your Account no is: " + user.getAccountno() );
 
         // add money
         String message = user.addMoney((int)balance);
